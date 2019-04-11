@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-from odoo import api, fields, models
+from odoo import models
 
 
 class ProcurementOrder(models.Model):
@@ -19,8 +19,8 @@ class ProcurementOrder(models.Model):
                 add_description = " / " + self.sale_line_id.order_id.description
 
         res.name = '%s: %s / %s%s' % (self.origin or '', 
-                self.product_id.name, 
-                self.sale_line_id.order_id.partner_shipping_id.name, 
+                self.product_id.name,
+                self.sale_line_id.order_id.partner_shipping_id.name,
                 add_description)
 
         return res
