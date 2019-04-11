@@ -30,6 +30,7 @@
     'application': False,
     'installable': True,
     'depends': [
+        'hr_skill',
         'sale_timesheet',
     ],
     'data': [
