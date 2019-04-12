@@ -30,7 +30,6 @@
     'application': False,
     'installable': True,
     'depends': [
-        'hr',
         'project',
     ],
     'data': [
