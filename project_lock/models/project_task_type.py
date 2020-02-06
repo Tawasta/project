@@ -76,7 +76,7 @@ class ProjectTaskType(models.Model):
         title = _("Warning for stage: %s") % self.name
 
         if locked and number_of_projects > 1:
-            message = _("Stage is linked to %s projects." % number_of_projects)
+            message = _("Stage is linked to %s projects.") % number_of_projects
             message += _("\nModifying or deleting this stage will affect those "
                          "projects also.")
             warning = {
